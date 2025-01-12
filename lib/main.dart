@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:inspire_me/view/favorite_screen/favorite_screen.dart';
 import 'package:inspire_me/view/home_screen/home_screen.dart';
-import 'package:inspire_me/view/setting_screen/setting_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -32,8 +31,7 @@ class _MainScreenState extends State<MainScreen> {
 
   final List<Widget> _pages = [
     HomeScreen(),
-    FavoriteScreen(),
-    SettingScreen()
+    FavoriteScreen()
   ];
 
   void _onItemTapped(int index) {
@@ -51,8 +49,7 @@ class _MainScreenState extends State<MainScreen> {
         onTap: _onItemTapped,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.favorite), label: "Favorite"),
-          BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Settings")
+          BottomNavigationBarItem(icon: Icon(Icons.favorite), label: "Favorite")
         ]
       ),
     );
